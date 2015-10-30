@@ -7,17 +7,19 @@
 
 <script>
 function next(){
-  url = "https://www.example.com?" + $("#form").serialize();
-  $.post(url).done(function( data ) {
+
+  url = "https://asieke.github.io/salmon/upstream_test.html" + $("#form").serialize();
+  $.post(url).always(function( data ) {
     window.location = "upstream_test_4.html" 
   });  
+
 }
 </script>
 </head>
 <div class="container">
   <form class="form-horizontal" action='javascript:next()' method='post'>
     <fieldset>
-      <legend style='padding-top: 30px'><h3>3) Payment</h3></legend>
+      <legend style='padding-top: 30px'><h3>3 | Payment</h3></legend>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-holder-name">Name on Card</label>
         <div class="col-sm-6">
